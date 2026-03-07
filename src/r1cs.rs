@@ -45,7 +45,7 @@ pub fn coefficient_of(&self,variable_index : usize) -> ScalarField {
 }
 
 impl R1cs {
-    pub fn add_constraint(&mut self,a:&LinearCombination, b:&LinearCombination, c:&LinearCombination)  {
+    pub fn add_constraint(&mut self,a:LinearCombination, b:LinearCombination, c:LinearCombination)  {
         let ac=a.clone();
         let bc=b.clone();
         let cc=c.clone();
