@@ -5,6 +5,7 @@ mod poly;
 mod setup;
 mod proof;
 mod verify;
+mod tests;
 
 use crate::verify::verify_proof;
 use crate::field::ScalarField;
